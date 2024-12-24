@@ -1,0 +1,89 @@
+.pt-36 {
+  padding-top: 8rem;
+}
+
+.body {
+  font-family: "Inter", sans-serif;
+}
+
+div.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.8rem;
+  gap: 0.5rem;
+  height: auto;
+}
+
+
+.badge-pill svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.badge-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border-radius: 1rem;
+  padding: 0.3rem 0.60rem;
+  outline: 1.5px solid rgba(255, 120, 180, 0.5); /* Khas AI */
+  background: linear-gradient(135deg, rgba(255, 120, 180, 0.5), rgba(150, 200, 255, 0.5));
+}
+
+.badge-pill:hover {
+  outline: 1.5px solid rgba(255, 120, 180, 0.5); /* Khas AI */
+  background: linear-gradient(135deg, rgba(255, 120, 180, 0.5), rgba(150, 200, 255, 0.5));
+  cursor: pointer;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #D1A7FF, #89CFF0, #FFB6C1);
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes smoothRotate {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(180deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.svg-animation{
+  animation: smoothRotate 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite; /* Smooth ala Material Design */
+  display: inline-block;
+  transform-origin: center; /* Agar berputar di tengah */
+}
+
+@media (min-width: 768px) {
+    .scale-md-150 {
+      transform: translateX(-50%) scale(1.5) !important;
+    }
+  }  
