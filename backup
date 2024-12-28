@@ -1,0 +1,41 @@
+
+
+            <!-- Frontend -->
+            <div class="col-12 col-md-4">
+              <div class="skill-group text-center">
+                <h4 class="mb-3">Frontend</h4>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+               <div class="col">
+                                 <div class="skill">
+                    <img class="skill-image" src="/assets/images/skills/HTML.svg" alt="HTML" />
+                    <p class="skill-name">HTML</p>
+                  </div>
+               </div>
+
+      <div class="col">
+      <div class="skill">
+      <img class="skill-image" src="/assets/images/skills/Tailwind.svg" alt="Tailwind" />
+       <p class="skill-name">Tailwind</p>
+       </div>
+       </div>
+       </div>
+            <div class="col">                  <div class="skill">
+                    <img class="skill-image" src="/assets/images/skills/Bootstrap.svg" alt="Bootstrap" />
+                    <p class="skill-name">Bootstrap</p>
+                  </div></div>
+                  <div class="col">                  <div class="skill">
+                    <img class="skill-image" src="/assets/images/skills/React.svg" alt="React" />
+                    <p class="skill-name">React</p>
+                  </div></div>
+                        <div class="col">                  <div class="skill">
+                    <img class="skill-image" src="/assets/images/skills/NextJS.svg" alt="Next.js" />
+                    <p class="skill-name">Next.js</p>
+                  </div></div>
+                              <div class="col"></div>
+
+
+
+
+                </div>
+              </div>
+            </div>

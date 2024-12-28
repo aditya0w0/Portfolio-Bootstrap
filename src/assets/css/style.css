@@ -158,56 +158,54 @@ div > i {
     .scale-md-150 {
       transform: translateX(-50%) scale(1.5) !important;
     }
-  }  
+}  
 
-  .luxurious{
-    font-family: "Luxurious Script", serif;
-    font-style: normal;
-  }  
+.luxurious{
+  font-family: "Luxurious Script", serif;
+  font-style: normal;
+}  
 
-  #passion .card {
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 24px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-  }
+#passion .card {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+}
 
-  #passion .card .circle-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 11px;
-  }
+#passion .card .circle-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 11px;
+}
 
-  #passion .card .circle-container .circle{
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-  }
+#passion .card .circle-container .circle{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+}
 
-  #passion .card .card-body{
-    padding: 0;
-  }
+#passion .card .card-body{
+  padding: 0;
+}
 
-  #passion .card .card-body .card-title{
-    font-size: 18px;
-    text-align: center;
-  }
+#passion .card .card-body .card-title{
+  font-size: 18px;
+  text-align: center;
+}
 
-  #passion .card .card-body .card-text{
-    font-size: 14px;
-    text-align: center;
-  }
-
+#passion .card .card-body .card-text{
+  font-size: 14px;
+  text-align: center;
 }
 
 .about-portrait{
@@ -262,4 +260,34 @@ div > i {
     object-fit: cover;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
     -webkit-box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
+}
+
+#skills{
+  padding: 100px 0px;
+  min-height: 100vh;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 18px 0px;
+  border-radius: 25px;
+  backdrop-filter: blur(20px); /* Reduced blur radius */
+  -webkit-backdrop-filter: blur(20px); /* Reduced blur radius */
+  box-shadow: 0 0 5px rgba(144, 81, 227, 0.5); /* Simplified box-shadow */
+  -webkit-box-shadow: 0 0 5px rgba(144, 81, 227, 0.5); /* Simplified box-shadow */
+}
+
+#skills i {
+  font-size: 50px; /* Sesuaikan ukuran ikon */
+  padding: 8px; /* Jarak di sekitar ikon */
+}
+
+.skill-name {
+  letter-spacing: 2px;
+  font-size: 17px;
+  padding-top: 5px;
+  margin: 0;
 }
