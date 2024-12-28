@@ -31,14 +31,22 @@ div > i {
   justify-content: center;
   line-height: 1;
   border-radius: 1rem;
-  padding: 0.3rem 0.60rem;
+  padding: 0.3rem 0.6rem;
   outline: 1.5px solid rgba(255, 120, 180, 0.5); /* Khas AI */
-  background: linear-gradient(135deg, rgba(255, 120, 180, 0.5), rgba(150, 200, 255, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 120, 180, 0.5),
+    rgba(150, 200, 255, 0.5)
+  );
 }
 
 .badge-pill:hover {
   outline: 1.5px solid rgba(255, 120, 180, 0.5); /* Khas AI */
-  background: linear-gradient(135deg, rgba(255, 120, 180, 0.5), rgba(150, 200, 255, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 120, 180, 0.5),
+    rgba(150, 200, 255, 0.5)
+  );
   cursor: pointer;
 }
 
@@ -59,7 +67,7 @@ div > i {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: linear-gradient(135deg, #D1A7FF, #89CFF0, #FFB6C1);
+  background: linear-gradient(135deg, #d1a7ff, #89cff0, #ffb6c1);
   border-radius: 5px;
   bottom: 0;
   left: 0;
@@ -72,7 +80,7 @@ div > i {
 }
 
 .ios i {
-  position : relative;
+  position: relative;
   display: inline-block;
   margin-right: 0.5rem;
   width: 46px;
@@ -86,7 +94,7 @@ div > i {
 .ios i::before {
   content: "";
   position: absolute;
-    left: 0px;
+  left: 0px;
   width: 42px;
   height: 22px;
   background: #fff;
@@ -133,7 +141,6 @@ div > i {
   transform: translate3d(22px, 2px, 0);
 }
 
-
 @keyframes smoothRotate {
   0% {
     transform: rotate(0deg);
@@ -148,22 +155,22 @@ div > i {
   }
 }
 
-.svg-animation{
-  animation: smoothRotate 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite; /* Smooth ala Material Design */
+.svg-animation {
+  animation: smoothRotate 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* Smooth ala Material Design */
   display: inline-block;
   transform-origin: center; /* Agar berputar di tengah */
 }
 
 @media (min-width: 768px) {
-    .scale-md-150 {
-      transform: translateX(-50%) scale(1.5) !important;
-    }
-}  
+  .scale-md-150 {
+    transform: translateX(-50%) scale(1.5) !important;
+  }
+}
 
-.luxurious{
+.luxurious {
   font-family: "Luxurious Script", serif;
   font-style: normal;
-}  
+}
 
 #passion .card {
   background-color: transparent;
@@ -171,11 +178,15 @@ div > i {
   border-radius: 24px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-  -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+  box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
 }
 
-#passion .card .circle-container{
+#passion .card .circle-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +194,7 @@ div > i {
   padding: 11px;
 }
 
-#passion .card .circle-container .circle{
+#passion .card .circle-container .circle {
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -191,78 +202,96 @@ div > i {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+  box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
 }
 
-#passion .card .card-body{
+#passion .card .card-body {
   padding: 0;
 }
 
-#passion .card .card-body .card-title{
+#passion .card .card-body .card-title {
   font-size: 18px;
   text-align: center;
 }
 
-#passion .card .card-body .card-text{
+#passion .card .card-body .card-text {
   font-size: 14px;
   text-align: center;
 }
 
-.about-portrait{
-    display: flex;
-    padding: 30px 0px 30px 0px;
-    justify-content: center;
-    align-items: center;
+.about-portrait {
+  display: flex;
+  padding: 30px 0px 30px 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-portrait::before {
-    content: "";
-    background-color: transparent;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    z-index: -2;
-    box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
-    -webkit-box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
+  content: "";
+  background-color: transparent;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: -2;
+  box-shadow:
+    2px 2px 0px inset var(--primary-color),
+    -2px -2px 0px inset transparent;
+  -webkit-box-shadow:
+    2px 2px 0px inset var(--primary-color),
+    -2px -2px 0px inset transparent;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 
 .about-portrait:hover::before {
-    transform: translate(-23px,-23px);
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
+  transform: translate(-23px, -23px);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 
-  .about-portrait::after {
-    content: "";
-    background-color: transparent;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    z-index: -2;
-    box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
-    -webkit-box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
+.about-portrait::after {
+  content: "";
+  background-color: transparent;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: -2;
+  box-shadow:
+    2px 2px 0px inset transparent,
+    -2px -2px 0px inset var(--primary-color);
+  -webkit-box-shadow:
+    2px 2px 0px inset transparent,
+    -2px -2px 0px inset var(--primary-color);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 
 .about-portrait:hover::after {
-    transform: translate(35px,30px);
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
+  transform: translate(35px, 30px);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 
-.about-portrait .pic{
-    width: 70%;
-    height: auto;
-    border-radius: 0.5rem;
-    object-fit: cover;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
-    -webkit-box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
+.about-portrait .pic {
+  width: 70%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow:
+    0 0 #0000,
+    0 0 #0000,
+    0 0 #0000,
+    12px 8px 0px 0px #850dd5;
+  -webkit-box-shadow:
+    0 0 #0000,
+    0 0 #0000,
+    0 0 #0000,
+    12px 8px 0px 0px #850dd5;
 }
 
-#skills{
+#skills {
   padding: 100px 0px;
   min-height: 100vh;
 }
@@ -280,9 +309,9 @@ div > i {
   -webkit-box-shadow: 0 0 5px rgba(144, 81, 227, 0.5); /* Simplified box-shadow */
 }
 
-#skills i {
-  font-size: 50px; /* Sesuaikan ukuran ikon */
-  padding: 8px; /* Jarak di sekitar ikon */
+.skill-image {
+  width: 71px;
+  padding: 8px;
 }
 
 .skill-name {
