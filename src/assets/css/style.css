@@ -15,6 +15,9 @@ div.badge {
   height: auto;
 }
 
+div > i {
+  cursor: pointer;
+}
 
 .badge-pill svg {
   width: 1em;
@@ -62,6 +65,75 @@ div.badge {
   left: 0;
 }
 
+.ios {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ios i {
+  position : relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 46px;
+  height: 26px;
+  backdrop-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: middle;
+  trainstion: all 0.3s linear;
+}
+
+.ios i::before {
+  content: "";
+  position: absolute;
+    left: 0px;
+  width: 42px;
+  height: 22px;
+  background: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.ios i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-out;
+}
+
+.ios:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+
+.ios:active input:checked + i::after {
+  transform: translate3d(16px, 2px, 0);
+}
+
+.ios input {
+  display: none;
+}
+
+.ios input:checked + i {
+  background: #4cd964;
+}
+
+.ios input:checked + i::before {
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.ios input:checked + i::after {
+  transform: translate3d(22px, 2px, 0);
+}
+
+
 @keyframes smoothRotate {
   0% {
     transform: rotate(0deg);
@@ -87,3 +159,51 @@ div.badge {
       transform: translateX(-50%) scale(1.5) !important;
     }
   }  
+
+  .luxurious{
+    font-family: "Luxurious Script", serif;
+    font-style: normal;
+  }  
+
+  #passion .card {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+  }
+
+  #passion .card .circle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 11px;
+  }
+
+  #passion .card .circle-container .circle{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+  }
+
+  #passion .card .card-body{
+    padding: 0;
+  }
+
+  #passion .card .card-body .card-title{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #passion .card .card-body .card-text{
+    font-size: 14px;
+    text-align: center;
+  }

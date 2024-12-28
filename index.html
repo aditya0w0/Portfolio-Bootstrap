@@ -21,6 +21,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
     />
+    <!--Majestic-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
@@ -55,7 +65,16 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <button class="btn bg-primary rounded text-white">Get in Touch</button>
+            <div class="gap-2 d-flex align-items-center">
+              <button class="btn bg-primary rounded text-white">
+                Get in Touch
+              </button>
+              <label class="ios">
+                <input type="checkbox" id="toggleMode" />
+                <i></i>
+                <span id="SpanCheckbox">Casual</span>
+              </label>
+            </div>
           </div>
         </div>
       </nav>
@@ -69,53 +88,81 @@
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3 align-items-center align-items-lg-start order-2 order-lg-1"
             >
-            <!--Judul-->
-            <h1 class="fw-bold text-center text-md-start display-5 mb-3 text-gradient">
-              <span class="fs-3">こんにちは, 私は </span>
-              <br />
-              <span class="">Aditya Galang</span>
-            </h1>
-            <!--Badge-->
-            <div class="rounded-pill badge-pill background-gradient d-flex flex-wrap align-items-center text-dark mb-3 justify-content-center justify-content-md-start">
-              <span class="d-flex align-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 100 125"
-                  fill="none"
-                  preserveAspectRatio="xMidYMid meet"
+              <!--Judul-->
+              <h1
+                class="fw-bold text-center text-lg-start display-5 mb-3 text-gradient"
+              >
+                <span class="fs-3">こんにちは, 私は </span>
+                <br />
+                <span class="">Aditya Galang</span>
+              </h1>
+              <!--Badge-->
+              <div
+                class="rounded-pill badge-pill background-gradient d-flex flex-wrap align-items-center text-dark mb-3 justify-content-center justify-content-md-start"
+              >
+                <span class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 125"
+                    fill="none"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M48.9712 42.644L50 37.5L51.0288 42.644C52.9289 52.1447 60.3553 59.5711 69.856 61.4712L75 62.5L69.856 63.5288C60.3553 65.4289 52.9289 72.8553 51.0288 82.356L50 87.5L48.9712 82.356C47.0711 72.8553 39.6447 65.4289 30.144 63.5288L25 62.5L30.144 61.4712C39.6447 59.5711 47.0711 52.1447 48.9712 42.644Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M28.6523 19.2387L29.1667 16.6667L29.6811 19.2387C30.6312 23.989 34.3443 27.7022 39.0947 28.6523L41.6667 29.1667L39.0947 29.6811C34.3443 30.6311 30.6312 34.3443 29.6811 39.0947L29.1667 41.6667L28.6523 39.0947C27.7022 34.3443 23.989 30.6311 19.2387 29.6811L16.6667 29.1667L19.2387 28.6523C23.989 27.7022 27.7022 23.989 28.6523 19.2387Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M70.4904 22.548L70.8333 20.8333L71.1763 22.548C71.8096 25.7149 74.2851 28.1903 77.452 28.8237L79.1667 29.1667L77.452 29.5096C74.2851 30.143 71.8096 32.6184 71.1763 35.7853L70.8333 37.5L70.4904 35.7853C69.857 32.6184 67.3816 30.143 64.2147 29.5096L62.5 29.1667L64.2147 28.8237C67.3816 28.1903 69.857 25.7149 70.4904 22.548Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Frontend Developer
+                </span>
+              </div>
+              <!--Desc-->
+              <p class="fw-medium text-center text-lg-start lead mb-3">
+                It started at a local internet café, where I spent hours
+                <span class="underline">experimenting</span> with phones. That
+                spark grew into a passion for technology, guiding me to become a
+                <span class="underline">developer</span> always striving for
+                more.
+              </p>
+              <!--List Sosial-->
+              <div
+                class="d-inline-flex align-items-center justify-content-center justify-content-md-start gap-3 fs-5 mb-2"
+              >
+                <!-- Github -->
+                <i class="bi bi-github"></i>
+                <!-- Twitter -->
+                <i class="bi bi-twitter-x"></i>
+                <!-- Instagram -->
+                <i class="bi bi-instagram"></i>
+                <!-- Telegram -->
+                <i class="bi bi-telegram"></i>
+                <!-- LinkedIn -->
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <!--Button-->
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-md-start"
+              >
+                <button
+                  class="btn bg-primary text-white rounded-md d-flex gap-2 align-items-center"
                 >
-                  <path
-                    d="M48.9712 42.644L50 37.5L51.0288 42.644C52.9289 52.1447 60.3553 59.5711 69.856 61.4712L75 62.5L69.856 63.5288C60.3553 65.4289 52.9289 72.8553 51.0288 82.356L50 87.5L48.9712 82.356C47.0711 72.8553 39.6447 65.4289 30.144 63.5288L25 62.5L30.144 61.4712C39.6447 59.5711 47.0711 52.1447 48.9712 42.644Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M28.6523 19.2387L29.1667 16.6667L29.6811 19.2387C30.6312 23.989 34.3443 27.7022 39.0947 28.6523L41.6667 29.1667L39.0947 29.6811C34.3443 30.6311 30.6312 34.3443 29.6811 39.0947L29.1667 41.6667L28.6523 39.0947C27.7022 34.3443 23.989 30.6311 19.2387 29.6811L16.6667 29.1667L19.2387 28.6523C23.989 27.7022 27.7022 23.989 28.6523 19.2387Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M70.4904 22.548L70.8333 20.8333L71.1763 22.548C71.8096 25.7149 74.2851 28.1903 77.452 28.8237L79.1667 29.1667L77.452 29.5096C74.2851 30.143 71.8096 32.6184 71.1763 35.7853L70.8333 37.5L70.4904 35.7853C69.857 32.6184 67.3816 30.143 64.2147 29.5096L62.5 29.1667L64.2147 28.8237C67.3816 28.1903 69.857 25.7149 70.4904 22.548Z"
-                    fill="black"
-                  />
-                </svg>
-                Frontend Developer
-              </span>
-            </div>
-            <!--Desc-->
-            <p class="fw-medium text-center text-md-start lead mb-4">
-              It started at a local internet café, where I spent hours 
-              <span class="underline">experimenting</span> with phones. That spark grew into a passion for 
-              technology, guiding me to become a <span class="underline">developer</span> always striving for more.
-            </p>
-            <!--Button-->
-            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-              <button class="btn bg-primary text-white rounded-pill">
-                Discover My Work
-              </button>
-            </div>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  Discover My Work
+                </button>
+              </div>
             </div>
 
             <!-- Image Section -->
-            <div class="col-12 col-lg-6 position-relative px-3 order-1 order-lg-2">
+            <div
+              class="col-12 col-lg-6 position-relative px-3 order-1 order-lg-2"
+            >
               <!-- Image -->
               <img
                 src="./src/assets/image/yae.png"
@@ -147,59 +194,92 @@
         </div>
       </section>
 
-      <section id="about" class="pt-36">
-        <div class="container align-items-center">
-          <div class="row flex-wrap">
+      <section id="passion" class="pt-36">
+        <div class="container">
+          <div class="row">
             <div
-              class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3 w-full"
+              class="col-12 d-flex flex-column justify-content-center px-3 align-items-start align-items-lg-center"
             >
-              <h1
-                class="fw-bold text-center text-md-start display-4 mb-1 text-gradient"
+              <div class="badge bg-primary text-white">
+                <span class="fs-6">Interests</span>
+              </div>
+              <h2
+                class="fw-bold text-center text-lg-start display-5 mb-4 text-gradient"
               >
-                Aditya Galang
-              </h1>
-              <h2 class="fw-semibold text-center text-md-start h4 mb-2">
-                Frontend & <span>Tech Enthusiast</span>
+                <span class="fs-3 luxurious">My Passion</span>
               </h2>
-              <p
-                class="text-muted fw-medium text-center text-md-start lead mb-4"
-              >
-                An overly ambitious idealist striving to excel across diverse
-                fields.
-              </p>
-              <button
-                class="btn rounded-full bg-primary d-none d-lg-block w-25 text-white"
-              >
-                View My Work
-              </button>
             </div>
-            <div
-              class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3 w-full"
-            >
-              <h1
-                class="fw-bold text-center text-md-start display-4 mb-1 text-gradient"
-              >
-                Aditya Galang
-              </h1>
-              <h2 class="fw-semibold text-center text-md-start h4 mb-2">
-                Frontend & <span>Tech Enthusiast</span>
-              </h2>
-              <p
-                class="text-muted fw-medium text-center text-md-start lead mb-4"
-              >
-                An overly ambitious idealist striving to excel across diverse
-                fields.
-              </p>
-              <button
-                class="btn rounded-full bg-primary d-none d-lg-block w-25 text-white"
-              >
-                View My Work
-              </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="circle-container">
+                  <div class="circle"><i class="bi bi-droplet-half"></i></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-title">Design</p>
+                  <p class="card-text">
+                    I value simple content structure, clean design patterns, and
+                    thoughtful interactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="circle-container">
+                  <div class="circle"><i class="bi bi-code-slash"></i></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-title">Development</p>
+                  <p class="card-text">
+                    I like to code things from scratch and enjoy bringing ideas
+                    to life in the browser.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="circle-container">
+                  <div class="circle"><i class="bi bi-headset"></i></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-title">Music</p>
+                  <p class="card-text">
+                    I value simple content structure, clean design patterns, and
+                    thoughtful interactions.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="about" class="pt-36">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column justify-content-center px-3 align-items-start align-items-lg-center"
+            >
+              <div class="badge bg-primary text-white">
+                <span class="fs-6">About</span>
+              </div>
+              <h2
+                class="fw-bold text-center text-lg-start display-5 mb-4 text-gradient"
+              >
+                <span class="fs-3 luxurious">About Me</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <img src="" alt="pa">
+            </div>
+      </section>
     </main>
+    <script src="./src/logic/js/ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   </body>
