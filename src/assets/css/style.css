@@ -207,3 +207,59 @@ div > i {
     font-size: 14px;
     text-align: center;
   }
+
+}
+
+.about-portrait{
+    display: flex;
+    padding: 30px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-portrait::before {
+    content: "";
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+    box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
+    -webkit-box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+.about-portrait:hover::before {
+    transform: translate(-23px,-23px);
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+  .about-portrait::after {
+    content: "";
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+    box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
+    -webkit-box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+.about-portrait:hover::after {
+    transform: translate(35px,30px);
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+.about-portrait .pic{
+    width: 70%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
+    -webkit-box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
+}
