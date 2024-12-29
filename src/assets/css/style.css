@@ -1,3 +1,19 @@
+:root {
+  --primary-color: #415de6;
+  --secondary-color: #e64157;
+  --tertiary-color: #12c2e9;
+  --primary-gradient-color: linear-gradient(90deg, #e64157, #415de6);
+  --secondary-gradient-color: linear-gradient(
+    to right,
+    #12c2e9,
+    #f64f59,
+    #f64f59
+  );
+  --underline-gradient: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  --vertical-gradient: linear-gradient(to top, #12c2e9, #c471ed, #f64f59);
+  --transition-default: all 0.4s ease;
+}
+
 .pt-36 {
   padding-top: 8rem;
 }
@@ -319,4 +335,185 @@ div > i {
   font-size: 17px;
   padding-top: 5px;
   margin: 0;
+}
+
+#passion {
+  padding: 100px 0px 80px 0px;
+  background-image: url(/assets/images/grid.png);
+  background-size: contain;
+  min-height: 100vh;
+}
+
+#hero {
+  min-height: 100vh;
+}
+
+#tools {
+  padding: 100px 0px 80px 0px;
+  background-image: url(/assets/images/grid.png);
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 18px 0px;
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+}
+
+.tool-image {
+  width: 71px;
+  padding: 8px;
+}
+
+.tool-name {
+  letter-spacing: 2px;
+  font-size: 17px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+#projects {
+  padding: 100px 0px 80px 0px;
+  min-height: 100vh;
+  background-image: url(/assets/images/grid.png);
+  background-size: contain;
+}
+
+.project-card {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow:
+    0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+}
+
+.project-card .title {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.project-card .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-image: var(--underline-gradient);
+  transition: width 0.35s ease;
+  -webkit-transition: width 0.35s ease;
+}
+
+.project-card .title:hover::after {
+  width: 100%;
+}
+
+.project-card .tagline,
+.project-card .stacks,
+.project-card .description {
+  font-size: 11px;
+  color: var(--muted-text);
+}
+
+.project-card .in-progress {
+  font-size: 11px;
+  border-radius: 32px;
+}
+
+.project-card .icon {
+  max-width: 70%;
+}
+
+.project-card .description-container {
+  padding-left: inherit;
+}
+
+.project-card .description {
+  font-size: 14px;
+}
+
+.project-card .banner-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-card .banner {
+  border-radius: inherit;
+}
+
+.project-card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+}
+
+.project-card .banner-container:hover .overlay {
+  opacity: 0.9;
+}
+
+.project-card .overlay a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card .overlay i {
+  position: absolute;
+  font-size: 25px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-card .primary-bg-btn {
+  background-color: #850dd5;
+}
+
+.project-card .primary-bg-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--bg-color);
+}
+
+.stack-icon {
+  width: 15px;
+  height: auto;
+}
+
+.in-progress {
+  text-wrap: nowrap;
+  background-color: rgba(255, 156, 9, 0.15);
+  color: rgb(255, 156, 9);
+}
+
+.theme-text {
+  background: var(--secondary-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
